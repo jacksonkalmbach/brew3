@@ -6,8 +6,10 @@ import Dashboard from './components/dashboard.js';
 class App extends Component{
   render(){
     return(
-      <div className="App">
-        <h1>Brewhaha<span>☕️</span> </h1>
+      <div className="App" style={{display: "flex", flexDirection: "column"}}>
+        <div style={{display: "flex", justifyContent: "center", width: "100%", backgroundColor: "#E12301"}}>
+          <h1 style={{color: "white"}}>Say Cheese!</h1>
+        </div>
         <Dashboard />
       </div>
     );
