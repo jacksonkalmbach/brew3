@@ -5,10 +5,10 @@ const port = 3000;
 
 app.use(express.static(path.resolve(__dirname, 'public')))
 
-app.get('/', (req, res) => {
+app.get('/hungry', (req, res) => {
     res
     .status(200)
-    .send('What\'s shakin, bacon? 🥓');
+    .send('Baby got Back(end)! 🍑');
 })
 
 app.listen(port, () => {
