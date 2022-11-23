@@ -35,24 +35,24 @@ function Cafe()  {
                     {(typeof backendData.shops === 'undefined') ? (
                         <p>Loading...</p>
                     ): (
-                        <p>{backendData.shops[0]}</p>
+                        <p>{backendData.shops[1]}</p>
                     )}
                 </li>
                 <li>
                     {(typeof backendData.shops === 'undefined') ? (
                         <p>Loading...</p>
                     ): (
-                        <p>{backendData.locations[0]}</p>
+                        <p>{backendData.locations[1]}</p>
                     )}
                 </li>
                 <li>
                     {(typeof backendData.shops === 'undefined') ? (
                         <p>Loading...</p>
                     ): (
-                        <p>{backendData.score[0]}</p>
+                        <p>{backendData.score[1]}</p>
                     )}
                 </li>
-                <li><p>+</p></li>
+                <li><p><button style={{borderRadius: "10px"}}>+ Add</button></p></li>
             </ul>
         </div>
     )
