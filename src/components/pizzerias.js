@@ -18,7 +18,7 @@ function FetchPizzerias() {
 
     return (
         <div>
-            <div style={{listStyle: "none", gridColumn: "span 2", display:"flex", flexDirection: "column", justifyContent:"space-evenly"}}>
+            <div style={{listStyle: "none", display:"flex", flexDirection: "column", justifyContent:"space-evenly"}}>
                 {
                     pizzerias.map(pizzeria => (
                     <div className="option"
