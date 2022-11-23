@@ -14,8 +14,8 @@ class App extends Component{
         <div style={{borderRadius: "10px", display: "flex", justifyContent: "center", width: "100%", backgroundColor: "#E12301"}}>
           <h1 style={{color: "white"}}>Say Cheese!</h1>
         </div>
-          {/* <Dashboard /> */}
-          <FetchPizzerias />
+          <Dashboard />
+          {/* <FetchPizzerias /> */}
       </div>
     );
   }
