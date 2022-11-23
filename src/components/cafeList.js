@@ -1,49 +1,9 @@
 
-// import React, {Component} from 'react';
-// import Cafe from './cafe';
-// import FetchPizzerias from './pizzerias';
-
-
-// class CafeList extends Component {
-
-
-//     constructor() {
-//         super();
-        
-//         this.state = {
-//           names: ['Joe\'s Pizza', 'Zazzy\'s Pizza', 'Burrata Pizza', 'Joe and Pat\'s', 'Don Antonio'],
-//           neighborhoods: ['Multiple Locations', 'West Village', 'East Village', 'East Village', 'Hell\'s Kitchen'],
-//           scores: ['🍕🍕🍕🍕🍕', '🍕🍕🍕🍕', '🍕🍕🍕', '🍕🍕🍕', '🍕🍕🍕🍕']
-//         };
-//     }
-    
-
-//     render() {
-
-//         const cafeOptions = [];
-//         for(let i = 0; i < this.state.names.length; i++) {
-//             cafeOptions.push(<Cafe key={i} name={this.state.names[i]} location={this.state.neighborhoods[i]} score={this.state.scores[i]} />);
-//         }
-
-//         console.log('cafeOptionsArr: ', cafeOptions)
-
-//         return(
-//             <div style={{border: "1px solid gray", borderRadius:"10px", margin: "10px"}}>
-//                 {cafeOptions}
-//                 {/* <FetchPizzerias /> */}
-//             </div>
-//         )
-//     }
-// };
-
-// export default CafeList;
-
-
-
 import React, {Component, useState, useEffect} from 'react';
 import Cafe from './cafe';
 import axios from "axios";
 import FetchPizzerias from './pizzerias';
+import Profile from './profile';
 
 
 
@@ -67,7 +27,6 @@ function CafeList() {
         })
     }, [])
     
-// console.log(pizzerias.length);
 
     const pizzaOptions = [];
     for(let i = 0; i < pizzerias.length; i++) {
@@ -78,8 +37,7 @@ function CafeList() {
     console.log('pizza 0', pizzaOptions.name)
 
     return(
-        <div style={{border: "1px solid gray", borderRadius:"10px", margin: "10px"}}>
-            {/* {pizzaOptions} */}
+        <div style={{border: "2px solid orange", borderRadius:"10px", margin: "10px", flexDirection:"row"}}>
             <FetchPizzerias />
         </div>
     )

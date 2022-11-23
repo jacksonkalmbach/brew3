@@ -15,18 +15,6 @@ function FetchPizzerias() {
         })
     })
 
-    // const pizzaOptions = [];
-    // for(let i = 0; i < pizzerias.length; i++) {
-    //     pizzaOptions.push(<FetchPizzerias key={i} name={pizzerias[i].name} location={pizzerias[i].location} score={pizzerias[i].scores} />);
-    // }
-
-    // <li>
-    //     {(typeof backendData.shops === 'undefined') ? (
-    //         <p>Loading...</p>
-    //     ): (
-    //         <p style={{fontWeight: "bold"}}>{backendData.shops[1]}</p>
-    //     )}
-    // </li>
 
     return (
         <div>

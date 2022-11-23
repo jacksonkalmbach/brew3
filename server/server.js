@@ -33,7 +33,7 @@ app.get('/pizzerias', (req, res) => {
         {
             "id": 1,
             "name":"Joe's Pizza",
-            "location": "Multiple",
+            "location": "Multiple Locations",
             "score": "🍕🍕🍕🍕🍕"
         }, 
         {
