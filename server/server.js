@@ -23,12 +23,39 @@ app.get('/api', (req, res) => {
 })
 
 app.get('/pizzerias', (req, res) => {
-    res.json({
-        "names":["Joe's Pizza","Zazzy's Pizza","Burrata Pizza", "Joe and Pat's", "Posto"],
-        "locations":["Multiple","West Village","East Village", "East Village", "Gramercy"],
-        "score":["🍕🍕🍕🍕🍕","🍕🍕🍕🍕","🍕🍕🍕", "🍕🍕🍕🍕", "🍕🍕🍕🍕"],
+    // res.json({
+    //     "names":["Joe's Pizza","Zazzy's Pizza","Burrata Pizza", "Joe and Pat's", "Posto"],
+    //     "locations":["Multiple","West Village","East Village", "East Village", "Gramercy"],
+    //     "score":["🍕🍕🍕🍕🍕","🍕🍕🍕🍕","🍕🍕🍕", "🍕🍕🍕🍕", "🍕🍕🍕🍕"],
 
-    })
+    // })
+    res.json([
+        {
+            "name":"Joe's Pizza",
+            "location": "Multiple",
+            "score": "🍕🍕🍕🍕🍕"
+        }, 
+        {
+            "name":"Zazzy's Pizza",
+            "location": "West Village",
+            "score": "🍕🍕🍕🍕"
+        },
+        {
+            "name":"Burrata",
+            "location": "East Village",
+            "score": "🍕🍕🍕"
+        },
+        {
+            "name":"Joe and Pat's",
+            "location": "East Village",
+            "score": "🍕🍕🍕"
+        },
+        {
+            "name":"Posto",
+            "location": "Gramercy",
+            "score": "🍕🍕🍕🍕"
+        }
+    ])
 })
 
 app.listen(port, () => {

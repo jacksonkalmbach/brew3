@@ -35,7 +35,7 @@ function Cafe()  {
                     {(typeof backendData.shops === 'undefined') ? (
                         <p>Loading...</p>
                     ): (
-                        <p>{backendData.shops[1]}</p>
+                        <p style={{fontWeight: "bold"}}>{backendData.shops[1]}</p>
                     )}
                 </li>
                 <li>
@@ -52,7 +52,7 @@ function Cafe()  {
                         <p>{backendData.score[1]}</p>
                     )}
                 </li>
-                <li><p><button style={{borderRadius: "10px"}}>+ Add</button></p></li>
+                <li><p><button style={{backgroundColor: "lightgray", borderRadius: "10px"}}>Add</button></p></li>
             </ul>
         </div>
     )

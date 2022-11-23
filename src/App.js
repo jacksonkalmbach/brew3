@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { render } from 'react-dom';
 import "./App.css";
 import Dashboard from './components/dashboard.js';
+import FetchPizzerias from "./components/pizzerias";
 
 
 class App extends Component{
@@ -13,7 +14,8 @@ class App extends Component{
         <div style={{borderRadius: "10px", display: "flex", justifyContent: "center", width: "100%", backgroundColor: "#E12301"}}>
           <h1 style={{color: "white"}}>Say Cheese!</h1>
         </div>
-          <Dashboard />
+          {/* <Dashboard /> */}
+          <FetchPizzerias />
       </div>
     );
   }
