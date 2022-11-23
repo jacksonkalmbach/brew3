@@ -5,10 +5,10 @@ import Profile from './profile';
 class Dashboard extends Component {
     render() {
         return(
-            <div className='dashboard' style={{margin: "10px", background: '#FEFFFF', border: "2px solid black", borderRadius: "10px", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+            <div className='dashboard' style={{margin: "10px", background: '#FEFFFF', border: "2px solid black", borderRadius: "10px", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", flexDirection: "row", justifyContent: "center"}}>
                 <Profile />
                 <CafeList />
-                <button style={{margin: "20px"}}>Add Pizzeria</button>
+                {/* <button style={{margin: "20px"}}>Add Pizzeria</button> */}
             </div>
         )
     }

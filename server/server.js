@@ -14,21 +14,7 @@ app.get('/hungry', (req, res) => {
     .send('Baby got Back(end)! 🍑');
 })
 
-app.get('/api', (req, res) => {
-    res.json({
-        "shops":["Joe's Pizza","Zazzy's Pizza","Burrata Pizza", "Joe and Pat's", "Posto"],
-        "locations":["Multiple","West Village","East Village", "East Village", "Gramercy"],
-        "score":["🍕🍕🍕🍕🍕","🍕🍕🍕🍕","🍕🍕🍕", "🍕🍕🍕🍕", "🍕🍕🍕🍕"],
-    })
-})
-
 app.get('/pizzerias', (req, res) => {
-    // res.json({
-    //     "names":["Joe's Pizza","Zazzy's Pizza","Burrata Pizza", "Joe and Pat's", "Posto"],
-    //     "locations":["Multiple","West Village","East Village", "East Village", "Gramercy"],
-    //     "score":["🍕🍕🍕🍕🍕","🍕🍕🍕🍕","🍕🍕🍕", "🍕🍕🍕🍕", "🍕🍕🍕🍕"],
-
-    // })
     res.json([
         {
             "id": 1,
@@ -65,6 +51,12 @@ app.get('/pizzerias', (req, res) => {
             "name":"John's of Bleeker Street",
             "location": "West Village",
             "score": "🍕🍕🍕🍕"
+        },
+        {
+            "id": 7,
+            "name":"Bravo Pizza",
+            "location": "Chelsea",
+            "score": "🍕🍕🍕"
         }
     ])
 })

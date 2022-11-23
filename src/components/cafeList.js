@@ -37,7 +37,7 @@ function CafeList() {
     console.log('pizza 0', pizzaOptions.name)
 
     return(
-        <div style={{border: "2px solid orange", borderRadius:"10px", margin: "10px", flexDirection:"row"}}>
+        <div style={{border: "1px solid lightgray", height: "45vh",gridColumn: "span 2", overflow: "scroll", borderRadius:"10px", margin: "10px", flexDirection:"row"}}>
             <FetchPizzerias />
         </div>
     )
