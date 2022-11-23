@@ -7,7 +7,7 @@ class App extends Component{
   render(){
     return(
       <div className="App" style={{display: "flex", flexDirection: "column"}}>
-        <div style={{display: "flex", justifyContent: "center", width: "100%", backgroundColor: "#E12301"}}>
+        <div style={{borderRadius: "10px", display: "flex", justifyContent: "center", width: "100%", backgroundColor: "#E12301"}}>
           <h1 style={{color: "white"}}>Say Cheese!</h1>
         </div>
         <Dashboard />
