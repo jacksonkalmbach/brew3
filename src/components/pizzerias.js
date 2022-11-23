@@ -30,38 +30,50 @@ function FetchPizzerias() {
 
     return (
         <div>
-            <ul style={{listStyle: "none", display: "flex", flexDirection: "column", justifyContent: "space-around"}}>
+            <div style={{listStyle: "none", display:"flex", flexDirection: "column", justifyContent:"space-evenly"}}>
                 {
                     pizzerias.map(pizzeria => (
-                    <div style= {{margin: "10px", boxShadow: "3px 5px 3px lightgray", border: "1px solid gray", borderRadius: "10px", display: "flex", flexDirection: "row", justifyContentt: "space-between" }}>
-                        <li>
+                    <div className="option"
+                    style= 
+                        {{
+                        margin: "5px", 
+                        boxShadow: "3px 5px 3px lightgray", 
+                        border: "1px solid gray", 
+                        borderRadius: "10px", 
+                        display: "grid", 
+                        flexDirection: "column",
+                        gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))" 
+                        // justifyContentt: "space-around"
+                        }}>
+
+                        <div style={{display: "flex", justifyContent:"center"}}>
                             {(typeof pizzeria.name === 'undefined') ? (
                                 <p>Loading...</p>
                             ) : (
                                 <p style={{ fontWeight: "bold" }}>{pizzeria.name}</p>
                             )}
-                        </li><li>
+                        </div><div style={{display: "flex", justifyContent:"center"}}>
                             {(typeof pizzeria.location === 'undefined') ? (
                                 <p>Loading...</p>
                             ) : (
                                 <p>{pizzeria.location}</p>
                             )}
-                        </li><li>
+                        </div><div style={{display: "flex", justifyContent:"center"}}>
                             {(typeof pizzeria.score === 'undefined') ? (
                                 <p>Loading...</p>
                             ) : (
                                 <p>{pizzeria.score}</p>
                             )}
-                        </li><li>
+                        </div><div style={{display: "flex", justifyContent:"center"}}>
                             <p>
                                 <button style={{ backgroundColor: "lightgray", borderRadius: "10px" }}>
                                     Add
                                 </button>
                             </p>
-                        </li>
+                        </div>
                     </div>
                 ))}
-            </ul>
+            </div>
         </div>
     )
 }
