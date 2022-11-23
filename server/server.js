@@ -57,6 +57,12 @@ app.get('/pizzerias', (req, res) => {
             "name":"Bravo Pizza",
             "location": "Chelsea",
             "score": "🍕🍕🍕"
+        },
+        {
+            "id": 8,
+            "name":"Rubirose",
+            "location": "Nolita",
+            "score": "🍕🍕🍕🍕🍕"
         }
     ])
 })

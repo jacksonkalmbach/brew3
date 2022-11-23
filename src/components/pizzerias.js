@@ -15,6 +15,9 @@ function FetchPizzerias() {
         })
     })
 
+    function addToList() {
+        alert('Added to Hit List!');
+      }
 
     return (
         <div>
@@ -54,7 +57,9 @@ function FetchPizzerias() {
                             )}
                         </div><div style={{display: "flex", justifyContent:"center"}}>
                             <p>
-                                <button style={{ backgroundColor: "lightgray", borderRadius: "10px" }}>
+                                <button 
+                                onClick={addToList}
+                                style={{ backgroundColor: "lightgray", borderRadius: "10px" }}>
                                     Add
                                 </button>
                             </p>
